@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.oldal</title>
+</head>
+<body>
+  
+<a href="index.html">Vissza az előző oldalra.</a>
+        
+    <h1>CSS Alapok</h1>
+
+<p>
+ Ez egy inline style, a követkeuo div-nrk a kék betűszint állítunk be.
+</p>
+
+<div style="color: blue">Ez egy kék szöveg.</div>
+
+<p>Ez is egy inline style, csak több csss property-t adtumk meg.</p>
+<div style="background-color: blue; 
+            height: 300px;    
+            text-align: center; 
+            color: aqua"
+    >Ez egy kék doboz, inline style-al kiszinezve.</div>
+
+<p>3. css class: 'pirosdiv' css classal ellátott html ele, megkapja a style tag-ben lévő .pirosdiv összers css property-t.</p>
+
+<div class="pirosdiv">Ez egy piros div.</div>
+
+<div id="lekerekitett">Ennek a széle le van kerekítve.</div>
+
+<style>
+/* ez egy css comment.*/
+
+/* a pirosdiv class-al ellátott html elemekre az alábbi tulajdonságok vonatkoznak:*/
+    
+    .pirosdiv { 
+        background-color: red;
+        height: 120px;
+        text-align: center;
+        padding-top: 70px;
+                }
+    #lekerekitett 
+    {
+        /* A padding beleflé tolja a tartalmat. */
+        padding: 30px;
+        /* A margin a html elem körül hat. */
+        margin-top: 20px ;
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+        height: 300px;
+    }   
+</style>
+
+<div class="doboz sarga-doboz">Ez egy sárga doboz.</div>
+<div class="doboz zold-doboz">Ez egy zöld doboz.</div>
+<div id="specialis-doboz" class="doboz">Speciális doboz</div>
+<style>
+.doboz
+    {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 20px;
+        color: white;
+    }
+    
+.sarga-doboz
+    {
+        background-color: yellow;
+    }
+    
+.zold-doboz
+    {
+        background-color: green;       
+    }
+    
+#specialis-doboz
+    {
+        background-color: black;
+    }
+    
+    
+</style>
+
+
+</body>
+</html>
