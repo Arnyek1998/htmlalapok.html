@@ -1,7 +1,4 @@
-/* csslint order-alphabetical: false*/
-
-/* CSSLint */
-
+/*csslint order-alphabetical: false*/
 
 .fo-menu
     {
@@ -41,4 +38,8 @@
 {
     background-color: lightgrey;
     height: 1000px; /* Ez csak azért kell, hogy a scrollbar megjelenjen.. */
+/*
+    Bizonyos css property-ket nem ajánlott használni, mert nem minden böngésző ismeri. Ezt a https://caniuse.com/#search=zoom, pl a zoom nem működik firefoxban.
+    zoom: 0.1;
+*/
 }
