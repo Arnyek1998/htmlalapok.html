@@ -1,0 +1,44 @@
+/* csslint order-alphabetical: false*/
+
+/* CSSLint */
+
+
+.fo-menu
+    {
+        height: 80px;
+        background-color: aqua;
+    }
+
+.menupont
+    {
+        height: 40px;
+        /* Körbe mindenhol 10 px a margin. */
+        /* margin: 10px; */
+        
+        /* A következő három sort rövidítve is lehet írni. */
+        /*
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        */
+        
+        /* Az előző három sor rövidítve. */
+        margin: 10px 0 10px 10px; /* Fölül, jobbra, alul, balra */
+        
+        background-color: blue;
+        color: white;
+        display: inline-block;
+        
+        /* padding-top: 22px;*/
+        /* padding-left: 10px;*/
+        /* padding-right: 10px;*/
+        
+        /* Az előző három sor rövidítve így néz ki: */
+        padding: 22px 10px 0 10px; 
+    }
+
+.tartalom
+{
+    background-color: lightgrey;
+    height: 1000px; /* Ez csak azért kell, hogy a scrollbar megjelenjen.. */
+}
