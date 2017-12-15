@@ -1,0 +1,86 @@
+/*csslint order-alphabetical: false*/
+
+body
+{
+    height: 1500px;
+}
+
+.fixed-doboz
+{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    /* A position fixed, kiszedi az elemet a document flow-ból, és egy fiy helyre beteszi. */
+    /*A többi elem számára ez az elem nem lesz látható.*/
+    position: fixed;
+    /*Ezek csak akkor működnek ha a position: fixed be van állítva*/
+    top:0;
+    right:0;
+    z-index: 1;
+}
+
+.zold-doboz
+{
+    width:200px;
+    height: 200px;
+    background-color: green;
+    /*Az absolute position majdnem olyan mint a fixed, de az elem nem marad a böngésző ablakhoz képest fix helye.*/
+    /*A position absolute kiveszi az elemet a document flow-ból.*/
+    position:absolute;
+}
+
+.narancs-doboz
+{
+    /*A position property alapértelmezett értéke a statik.*/
+    /*A static position esetén nincs értelme a z-indexnek.*/
+    position:static;
+    width:300px;
+    height: 300px;
+    background-color: orange;
+}
+
+.kek-doboz
+{
+    width:500px;
+    height: 500px;
+    background-color: blue;
+    /*A relative position esetén a többi elem számára ez az elem ugyanúgy látható marad, és nem esik ki.*/
+    /*A document flow-ból, viszont el lehet mozdítani a pozícióját, a böngészőhöz képest relatívan.*/
+    position: relative;
+    left: 250px;
+    top: 50px;
+}
+
+.piros-doboz
+{
+    width:150px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 200px;
+    
+}
+
+.piros-doboz:hover > .fekete-doboz {
+    display: block;
+}
+
+.fekete-doboz
+{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    /*A fekete doboz a piros dobozhoz képest lesz relative; mert a piros absolute-ba van.*/
+    position: relative;
+    left: 30px;
+    display: none;
+    top:30px;
+}
+
+.lila-doboz
+{
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+}
