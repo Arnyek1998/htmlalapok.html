@@ -9,7 +9,7 @@ body
 {
     width: 100%;
     height: 50px;
-    background-color: blue;
+    background-color: lightblue;
     /* A position fixed, kiszedi az elemet a document flow-ból, és egy fiy helyre beteszi. */
     /*A többi elem számára ez az elem nem lesz látható.*/
     position: fixed;
@@ -56,6 +56,7 @@ body
     width:150px;
     height: 50px;
     background-color: red;
+    /*Ha egy szülő elem position absolute, vagy relative, akkor a benne lévő elem ha absolute, vagy relative positiont kap, akkor a szülőhöz képest fog elmozdulni, egyébként pedig a böngésző ablakhoz képest mozdulna el.*/
     position: absolute;
     left: 200px;
     
