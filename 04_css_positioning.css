@@ -60,6 +60,10 @@ body
     position: absolute;
     left: 200px;
     
+    /* Mi történjen akkor ha az elem tartalma túllóg az elemen:
+    Jelenjen meg scrollbar? túllógjon? el legyen takarva? */
+    overflow: visible;
+    
 }
 
 .piros-doboz:hover > .fekete-doboz {
